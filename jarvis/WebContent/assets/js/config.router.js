@@ -40,6 +40,10 @@ $locationProvider.hashPrefix('');
             	  url:'/register',
             	  templateUrl: 'app/components/register.html'
               })
+               .state('app.blogger',{
+            	  url:'/blogger',
+            	  templateUrl: 'app/components/blogger.html'
+              })
     }
     ]
   );

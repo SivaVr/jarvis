@@ -1,0 +1,66 @@
+<!--Start Breadcrumb-->
+<div class="row">
+	<div id="breadcrumb" class="col-xs-12">
+		<ol class="breadcrumb">
+			<li><a ui-sref="app.dashboard" href="#/app/dashboard">Home</a></li>
+			<li><a ui-sref="app.blogger" href="#/app/blogger">Blogger</a></li>
+		</ol>
+	</div>
+</div>
+<!-- actual content start here -->
+<div class="row">
+	<button type="button"  onclick="showModal();"
+		class="btn btn-success btn-app-sm btn-circle">
+		<i class="fa fa-plus"></i>
+	</button>
+	<button type="button" class="btn btn-default btn-app-sm btn-circle">
+		<i class="fa fa-refresh "></i>
+	</button>
+
+
+	<div id="modalbox" class="mymodal">
+		<div class="devoops-modal">
+			<div class="devoops-modal-header">
+				<div class="modal-header-name">
+					<span>Add event</span>
+				</div>
+				<div class="box-icons">
+					<a class="close-link"> <i class="fa fa-times"></i>
+					</a>
+				</div>
+			</div>
+			<div class="devoops-modal-inner">
+				<form id="event_form">
+					<div class="form-group has-success has-feedback">
+						<label">Event name
+							<div>
+								<input type="text" id="newevent_name" class="form-control"
+									placeholder="Name of event">
+							</div> <label>Description</label>
+							<div>
+								<textarea rows="3" id="newevent_desc" class="form-control"
+									placeholder="Description"></textarea>
+							</div>
+						</label">
+					</div>
+				</form>
+			</div>
+			<div class="devoops-modal-bottom">
+				<button id="event_cancel" type="cancel"
+					class="btn btn-default btn-label-left">
+					<span><i class="fa fa-clock-o txt-danger"></i></span>Cancel
+				</button>
+				<button type="submit" id="event_submit"
+					class="btn btn-primary btn-label-left pull-right">
+					<span><i class="fa fa-clock-o"></i></span>Add
+				</button>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script>
+	function showModal() {
+		$(".mymodal").jarvisModal();
+	}
+</script>

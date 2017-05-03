@@ -2417,13 +2417,6 @@ ul.DTTT_dropdown.dropdown-menu>li:hover>a {
 	border-radius: 4px;
 }
 
-.modal-backdrop {
-	z-index: 2000;
-}
-
-.modal {
-	z-index: 2001;
-}
 
 .fc-event {
 	border: 1px solid #6AA6D6;
@@ -2919,4 +2912,7 @@ ul.DTTT_dropdown.dropdown-menu>li:hover>a {
 
 .follow-us>li>a:hover>i {
 	background: #ebebeb;
+}
+#modalbox.jarvismodal{
+	display: block;
 }
